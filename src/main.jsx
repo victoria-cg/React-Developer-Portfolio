@@ -1,3 +1,5 @@
+//In this file we need the router and paths for all the different page views
+
 import ReactDOM from 'react-dom/client'
 // Import createBrowserRouter and RouterProvider from 'react-router-dom' to set up application routing behavior
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -6,7 +8,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
-// import App from './App';
+//import all the different page components to be able to use them in the router
+
+import App from './App';
 // import Error from './pages/Error';
 // import Home from './pages/Home';
 // import Contact from './pages/Contact';
@@ -14,7 +18,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import Blog from './pages/Blog';
 
 // //Create client side react routes and their URL endpoints
-// const router = createBrowserRouter([
+const router = createBrowserRouter([
 //   {
 //     path: '/',
 //     element: <App />,
@@ -38,7 +42,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 //       },
 //     ],
 //   },
-// ]);
+ ]);
 
 //appends dynamic react content to the html element with and id of 'root'
 ReactDOM.createRoot(document.getElementById('root')).render(
