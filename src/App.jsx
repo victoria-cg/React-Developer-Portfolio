@@ -1,20 +1,22 @@
 //react router and outlet component here
 
-// import Outlet component from 'react-router-dom'
+// import Outlet component from 'react-router-dom', outlet is where different pages/views will be rendered based on the URL
 import { Outlet } from 'react-router-dom';
-//import nav for this project similar to the class example below?
-//import Nav from './components/NavTabs';
+//import header component which contains navigation component
+import Header from './components/Header';
+//import footer component
+import Footer from './components/Footer';
 
 //similar to main layout in handlebars.js, the app function will produce the nav component and then conditionally render the URL specific pages in the 'main' element
 function App() {
   // The Outlet component will conditionally change pages based on the URL
-  //remove mx-3 class name? specific to bootstrap in example code from class?
   return (
     <>
-      <Nav />
-      <main className="mx-3">
+      <Header/>
+      <main>
         <Outlet />
       </main>
+      <Footer/>
     </>
   );
 }
