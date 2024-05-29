@@ -4,7 +4,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 
-//linka get passed as props to navbar so that the navbar compnonent can render them as navbar divs
+//links get passed as props to navbar so that the navbar compnonent can render them as navbar divs
   export default function Navigation(){
     return(
       <Navbar
