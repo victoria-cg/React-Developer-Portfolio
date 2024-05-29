@@ -11,37 +11,43 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 //import all the different page components to be able to use them in the router
 
 import App from './App.jsx';
-// import Error from './pages/Error';
-// import Home from './pages/Home';
-// import Contact from './pages/Contact';
-// import About from './pages/About';
-// import Blog from './pages/Blog';
+import Error from './components/pages/Error.jsx';
+ import Home from './components/pages/Home.jsx';
+ import Contact from './components/pages/Contact.jsx';
+ import About from './components/pages/About.jsx';
+ import Portfolio from './components/pages/Portfolio.jsx';
+ import Resume from './components/pages/Resume.jsx';
 
 //Create client side react routes and their URL endpoints
+//index: true indicates the home page
 const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <App />,
-//     errorElement: <Error />,
-//     children: [
-//       {
-//         index: true,
-//         element: <Home />,
-//       },
-//       {
-//         path: '/About',
-//         element: <About />,
-//       },
-//       {
-//         path: '/Blog',
-//         element: <Blog />,
-//       },
-//       {
-//         path: '/Contact',
-//         element: <Contact />,
-//       },
-//     ],
-//   },
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/About',
+        element: <About />,
+      },
+      {
+        path: '/Portfolio',
+        element: <Portfolio />,
+      },
+      {
+        path: '/Contact',
+        element: <Contact />,
+      },
+      {
+        path: '/Resume',
+        element: <Resume />,
+      },
+    ],
+  },
  ]);
 
 //appends dynamic react content to the html element with an id of 'root'
