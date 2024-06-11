@@ -7,17 +7,17 @@ import Project from '../Project';
 //send projects state/data as props to the project component so it can use the data
 export default function Portfolio() {
   const [projects, setProjects] = useState([
-    {title: 'Project 1', id: 1},
-    {title: 'Project 2', id: 2},
-    {title: 'Project 3', id: 3},
-    {title: 'Project 4', id: 4},
-    {title: 'Project 5', id: 5},
-    {title: 'Project 6', id: 6}
+    {title: 'Texas Camping Planner', address: 'https://victoria-cg.github.io/Texas-Camping-Planner/', id: 1},
+    {title: 'Pup Portal', address: 'https://github.com/victoria-cg/Pup-Portal', id: 2},
+    {title: 'Weather Dashboard', address: 'https://github.com/victoria-cg/Weather-Dashboard/deployments/github-pages', id: 3},
+    {title: 'Password Generator', address: 'https://github.com/victoria-cg/Password-Generator-Challenge/deployments/github-pages', id: 4},
+    {title: 'SVG Logo Maker', address: 'https://github.com/victoria-cg/SVG-Logo-Maker', id: 5},
+    {title: 'README Generator', address: 'https://github.com/victoria-cg/README-Generator', id: 6}
   ]);
 
     return (
       <div>
-       <Project projects={projects} />
+       <Project projects={projects}/>
       </div>
     );
   }

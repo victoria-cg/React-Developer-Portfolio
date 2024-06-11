@@ -10,6 +10,7 @@ export default function Project(props) {
     {projects.map((project) =>(
     <div key={project.id}> 
     <h2>{project.title}</h2>
+    <a href= {project.address}>{project.address}</a>
     </div>
     ))}
      </div>
